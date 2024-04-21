@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom"
+import NewsFlowLogo from './NewsFlowLogo.png'; 
 
 export class Navbar extends Component {
   render() {
@@ -7,7 +8,8 @@ export class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/">NewsFlow</Link>
+    <Link className='navbar-logo' to ="/"><img src={NewsFlowLogo} alt="NewsFlow Logo" height="40" width="40"/></Link>
+    <Link className="navbar-brand" to="/"> NewsFlow</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
