@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import {Link} from "react-router-dom"
 import NewsFlowLogo from './NewsFlowLogo.png'; 
 
-export class Navbar extends Component {
-  render() {
+const Navbar = ()=>{
+
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <Link className='navbar-logo' to ="/"><img src={NewsFlowLogo} alt="NewsFlow Logo" height="40" width="40"/></Link>
     <Link className="navbar-brand" to="/"> NewsFlow</Link>
@@ -31,7 +31,7 @@ export class Navbar extends Component {
 </nav>
       </div>
     )
-  }
+ 
 }
 
 export default Navbar
